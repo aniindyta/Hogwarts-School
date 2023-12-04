@@ -1,5 +1,5 @@
 <h1 align="center">
-  ![image](https://github.com/aniindyta/Hogwarts-School/assets/87638112/b28f1255-4f7c-4f14-be92-09e2ebd579c1)
+  Hogwarts School
 </h1>
 <p align="center">
   Welcome to the GitHub repository for a Hogwarts-inspired project! This is a personal project and is not officially affiliated with Hogwarts School of Witchcraft and Wizardry. The repository contains the source code and assets for a magical online platform where users can explore news, features, and more.
