@@ -44,4 +44,4 @@
 
 |History Section|Gallery|News & Features|
 |--|--|--|
-|![image](https://github.com/aniindyta/Hogwarts-School/assets/87638112/941a0ec8-f679-4c6f-abfd-77a08d3ea529)|![image](https://github.com/aniindyta/Hogwarts-School/assets/87638112/5cdfda67-ff8c-4226-909d-17494f83c353)|![image](https://github.com/aniindyta/Hogwarts-School/assets/87638112/e9b3d22d-ab79-4dbd-8fd7-a2095f4d0a30)\
+|![image](https://github.com/aniindyta/Hogwarts-School/assets/87638112/941a0ec8-f679-4c6f-abfd-77a08d3ea529)|![image](https://github.com/aniindyta/Hogwarts-School/assets/87638112/5cdfda67-ff8c-4226-909d-17494f83c353)|![image](https://github.com/aniindyta/Hogwarts-School/assets/87638112/e9b3d22d-ab79-4dbd-8fd7-a2095f4d0a30)
