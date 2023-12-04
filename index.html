@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    <link rel="icon" type="image/png" href="asset/img/hogwarts-7917.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/mdb.min.css"> <!-- MDB -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark fade-in-down">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+            <i class="fas fa-bars" style="color: white;"></i>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="asset/img/hogwarts-7917.png" width="70" alt="HogwartsLogo"></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="text-center p-2">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">NEWS & FEATURES</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ACADEMICS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">STUDENT LIFE</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="loginBtn">LOGIN</a></li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+      <div class="parallax">
+        <div class="bg-image" style="background-image: url('asset/img/pxfuel.jpg');"></div>
+        <div class="mask">
+          <div class="d-flex justify-content-center align-items-center" style="height: 115vh;">
+            <div class="text-white">
+              <h1 class="mb-3 fade-in-down" style="text-align: center; font-size:48px;">HOGWARTS SCHOOL</h1>
+              <h5 class="mb-5 sub fade-in-down" style="text-align: center;">"Draco Dormiens Nunquam Titillandus"</h5>
+              <div class="d-flex justify-content-center">
+                <a class="btn btn-rounded btn-lg text-white fade-in-down" style="background-color: #f46239;" href="news.html" role="button">FIND OUT MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div id="loginPopup" class="login-popup" style="display: none;">
+        <div class="login-popup-content rounded-5">
+          <span class="close-btn">&times;</span>
+          <h2 class="mb-5">Login</h2>
+          <div class="form-outline mb-4">
+            <input type="email" class="form-control">
+            <label class="form-label">Email Address</label>
+            <div class="toggle-icon">
+              <i class="far fa-envelope"></i>
+            </div>
+          </div>
+          <div class="form-outline mb-4">
+            <input type="password" id="passwordInput" class="form-control">
+            <label class="form-label" for="passwordInput">Password</label>
+            <div class="toggle-icon" onclick="togglePasswordVisibility()">
+              <i id="passwordToggle" class="fas fa-eye"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end align-items-center mb-4">
+            <a href="#" class="forgot-password" style="padding-right: 10px;">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="background-color: #f46239;">Sign in</button>
+        </div>
+      </div>
+    </header>
+    
+    <main style="padding-bottom: 80px;">
+      <div class="my-5 scroll-animation">
+        <div class="container">
+          <section class="text-left">
+            <h2 class="mb-5">Latest News</h2>
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="asset/img/gryffindor-quidditch-spectators-1.jpg" class="img-fluid" alt="news">
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title ">Lorem Ipsum</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus, cupiditate atque perferendis unde enim, pariatur eos harum sed et corporis maiores iste recusandae, at ducimus dolorum. Perspiciatis a labore rerum?
+                    </p>
+                    <a href="#!" class="btn btn-primary" style="background-color: #f46239;">Read</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="asset/img/Hogwarts-Legacy-Sorting-Hat-65544a3.jpg" class="img-fluid" alt="news">
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem Ipsum</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus, cupiditate atque perferendis unde enim, pariatur eos harum sed et corporis maiores iste recusandae, at ducimus dolorum. Perspiciatis a labore rerum?
+                    </p>
+                    <a href="#!" class="btn btn-primary" style="background-color: #f46239;">Read</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="asset/img/honourable-wand.jpg" class="img-fluid" alt="news">
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem Ipsum</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus, cupiditate atque perferendis unde enim, pariatur eos harum sed et corporis maiores iste recusandae, at ducimus dolorum. Perspiciatis a labore rerum?
+                    </p>
+                    <a href="#!" class="btn btn-primary" style="background-color: #f46239;">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div style="background-color: rgba(92, 77, 66, 0.8); color: white;">
+        <div class="container scroll-animation">
+          <section id="history" class="mb-2">
+            <h2 class="text-center my-5" style="padding-top: 50px;">History</h2>
+            <div class="row">
+              <div class="col-md-4 gx-5 mb-2">
+                <img src="asset/img/hogwarts-7917.png" class="img-fluid" alt="logo">
+              </div>
+      
+              <div class="col-md-8 gx-5 mb-4">
+                <p class="text-his" style="padding-bottom: 110px;">
+                  Hogwarts was founded around 990 A.D. by four of the greatest wizards and witches of the age : 
+                  Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw, and Salazar Slytherin. 
+                  They each represented an aspect of personality that they wanted to bring out in new students. 
+                  They also placed certain protective enchantments in place to ensure the well-being of their students, 
+                  for which reason the castle and grounds had both always been protected with Anti-Apparition Charms. 
+                  Around the same time, the four founders employed the school's first Caretaker, Hankerton Humble, 
+                  who would often clash with Peeves, the resident Poltergeist, which he would have in common with every 
+                  successive caretaker after him in the history of Hogwarts.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container">
+        <section id="gallery" class="mb-2">
+          <h2 class="text-left my-5 scroll-animation" style="padding-top: 30px;">Gallery</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <figure class="gallery-item">
+                <img src="asset/img/harry-potter-story,-facebbook_647_052716094226.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="gallery">
+                <img src="asset/img/HarryPotterAesthetic.jfif" class="w-100 shadow-1-strong rounded mb-4" alt="gallery">
+              </figure>
+            </div>
+      
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <figure class="gallery-item">
+                <img src="asset/img/THEVAMPIRE&WOLFTREASURE.jfif" class="w-100 shadow-1-strong rounded mb-4" alt="gallery">
+                <img src="asset/img/Hermione-potions-class-harry-potter-cauldron.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="gallery">
+              </figure>
+            </div>
+      
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <figure class="gallery-item">
+                <img src="asset/img/WingardiumLeviosa_WB_F1_FlitwickTeachesCharmsClass_00356404.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="gallery">
+                <img src="asset/img/Firebolt.jfif" class="w-100 shadow-1-strong rounded mb-4" alt="gallery">
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>      
+
+      <button type="button" class="btn btn-floating btn-lg text-white" id="btn-back-to-top" style="background-color: #f46239;">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </main>
+    
+    <footer class="text-center text-lg-start text-white" style="background-color: rgba(92, 77, 66, 0.8);">
+      <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>For more Information :</span>
+        </div>
+
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f" style="color: #f7f7f7;"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter" style="color: #f7f7f7;"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-google" style="color: #f7f7f7;"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram" style="color: #f7f7f7;"></i>
+          </a>
+        </div>
+      </div>
+    
+      <div class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase mb-4">
+                <i class="fas fa-gem me-3" style="color: #f7f7f7;"></i>HOGWARTS
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid, ipsam saepe fuga dolores soluta at, incidunt ipsa beatae hic a tempore nemo neque error, et molestiae? Ipsum, necessitatibus et.
+              </p>
+            </div>
+    
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase mb-4 text">
+                News & Features
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">2023</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">2022</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">2021</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">2022</a>
+              </p>
+            </div>
+    
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Highlands, Scotland</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                execinfo@hogwarts.edu
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center p-4" style="background-color: rgba(92, 77, 66, 0.26)">
+        © 2023 Hogwarts School of Witchcraft and Wizardry
+      </div>
+    </footer>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- MDB -->
+    <script src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

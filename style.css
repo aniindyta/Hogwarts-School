@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'HogwartsItalic';
+    src: url('asset/font/BluuNext-Titling.otf');
+}
+
+@font-face {
+    font-family: 'HogwartsBold';
+    src: url('asset/font/BluuNext-Bold.otf');
+}
+
+@font-face {
+    font-family: 'HogwartsBI';
+    src: url('asset/font/BluuNext-Bolditalic.otf');
+}
+
+* {
+    margin:0; 
+    padding:0;
+    font-family: 'HogwartsBI';
+}
+
+.navbar {
+    position: absolute;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.navbar a {
+    font-family: 'HogwartsItalic';
+    color: #e0e6ec;
+    border-bottom: 0px solid #f46239;
+} 
+
+.navbar li {
+    padding-right: 30px;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+      flex-direction: column;
+    }
+
+    .nav-link:hover {
+        color: #ffffff;
+        border-bottom: 2px solid #f46239;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        background-color: rgba(92, 77, 66, 0.8);
+        backdrop-filter: blur(8px);
+    }
+
+    .navbar li {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link {
+        width: 100%;
+        height: 78.5px;
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.fade-in-down {
+    opacity: 0;
+    animation: fadeDown 1s ease forwards;
+}
+
+.sub {
+    font-family: 'HogwartsItalic';
+    font-style: italic;
+}
+
+.card img {
+    max-width:100%;
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+
+.text-his {
+    font-size: 22px;
+    text-align: justify;
+    padding-top: 45px;
+}
+
+figure img {
+    transition: transform 0.5s;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.login-popup-content {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    padding: 50px;
+    background-color: #fff;
+}
+  
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+#passwordToggle {
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-decoration: underline;
+    color: #f46239;
+}
+
+.forgot-password:hover {
+    color: black;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.parallax {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.parallax .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+  
+.parallax .mask {
+    background-color: rgba(92, 77, 66, 0.8);
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-animation.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
